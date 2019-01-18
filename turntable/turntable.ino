@@ -12,9 +12,7 @@ void setup() {
   while(!Serial); 
   stepper.setMaxSpeed(1000);
     
-  cmd.addCommand("PING", pingHandler);
   cmd.addCommand("MOVE", moveHandler); 
-  cmd.setDefaultHandler(unrecognized);
 }
 
 void moveRight(int velocity) { 
@@ -33,13 +31,8 @@ void loop() {
   if(Serial.available() > 0) {
     cmd.readSerial(); 
   }
-  
   stepper.runSpeed();
 }
-
-void pingHandler() {
-  stepper.setSpeed(0); 
-} 
 
 void moveHandler() { 
   String arg = (String) cmd.next(); 
@@ -49,12 +42,4 @@ void moveHandler() {
   if(velocity > 0) moveRight(velocity); 
   else moveLeft(velocity); 
   
-}
-
-void unrecognized(const char* command) {
-  /*
-  analogWrite(ledPin2, brightness); 
-  delay(100); 
-  analogWrite(ledPin2, 0); 
-  */ 
 }
