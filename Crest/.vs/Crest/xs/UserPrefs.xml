@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{AD5C85ED-AC9A-08C2-3E7C-80B9F529A85C}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Crest-Examples/BoatDev/Scripts/BoatAlignNormal.cs">
+    <Files>
+      <File FileName="Assets/Crest-Examples/BoatDev/Scripts/BoatAlignNormal.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
